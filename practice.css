@@ -1,0 +1,469 @@
+/* <<<<<<<<<<*Default_CSS*>>>>>>>>>> */
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.fixed-width{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Google_Fonts */
+body,h1,h2,h3,h4,h5,h6,p,span,a{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* <<<<<<<<<<*Header_Section_Html*>>>>>>>>>> */
+.header{
+    padding: 5px 0;
+}
+.header-logo-left{
+    width: 40%;
+}
+.img-logo-left img {
+	width: 105px;
+	height: auto;
+    margin-bottom: 0;
+}
+.menu-right{
+    width: 60%;
+}
+.menu-right ul {
+	list-style: none;
+	text-align: right;
+    margin-bottom: 0;
+}
+.menu-right ul li{
+    display: inline-block;
+}
+.menu-right ul li a {
+	padding-left: 48px;
+	display: inline-block;
+	line-height: 68px;
+	color: rgb(29, 29, 29);
+    font-size: 17px;
+}
+
+
+/* <<<<<<<<<<*Banner_Section_CSS*>>>>>>>>>> */
+.banner{
+    background: url(https://i.postimg.cc/zGNyd5xz/kobu-agency-IWLR561-Yb-MY-unsplash.jpg) no-repeat center;
+    padding: 150px 0;
+    background-size: cover;
+
+    position: relative;
+    z-index: 1;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    z-index: -1;
+}
+.banner-content{}
+.banner-content h3 {
+	color: #fff;
+	font-size: 27px;
+	font-weight: 500;
+    padding-bottom: 3px;
+}
+.banner-content h1 {
+	font-size: 60px;
+	color: #fff;
+	padding: 37px 0;
+	font-weight: 700;
+}
+.default-btn {
+	display: inline-block;
+	background: #fff;
+	color: gray;
+	padding: 19px 28px;
+	font-size: 20px;
+	font-weight: 600;
+	margin-left: 5px;
+	margin-right: 5px;
+    border-radius: 10px;
+
+    transition: .3s;
+}
+.default-btn:hover{
+    background-color: #db9722;
+    color: #fff;
+}
+
+
+/* <<<<<<<<<<*Pricing_Table_Section_CSS*>>>>>>>>>> */
+.pricing-section {
+	padding: 55px 0;
+    background-color: #f7f7f7;
+}
+.pricing-title{}
+.pricing-title h1 {
+	font-size: 55px;
+	font-weight: 500;
+    margin-bottom: 33px;
+}
+.pricing-title p {
+	font-weight: 400;
+    color: rgb(65, 65, 65);
+    margin-bottom: 80px;
+}
+
+
+.pricing-tables{}
+.pricing-table-item{
+    width: 32%;
+    margin-right: 2%;
+    background-color: #fff;
+    box-shadow: 3px 4px 30px 0 rgba(28, 72, 192, 0.158);
+}
+.pricing-table-item:last-child{
+    margin-right: 0;
+}
+.p-heading {
+	padding: 25px;
+	border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+.p-heading h4 {
+	font-size: 25px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.p-heading h1 {
+	font-size: 52px;
+	background: rgb(247, 247, 247);
+    padding-left: 10px;
+}
+.p-heading h3 {
+	margin-top: 40px;
+	font-size: 22px;
+	font-weight: 400;
+}
+.p-heading p {
+	margin: 30px 0;
+	font-size: 20px;
+	color: rgb(80, 80, 80);
+}
+.p-heading h1 span{
+    font-size: 20px;
+}
+
+.p-content{
+    padding: 25px;
+}
+.p-content ul{
+    list-style: none;
+}
+.p-content ul li {
+	margin: 30px 0;
+	font-size: 20px;
+	color: grey;
+}
+.p-content ul li span {
+	font-size: 30px;
+	display: inline-block;
+	width: 50px;
+	color: #e79230;
+}
+.p-button .default-btn{
+    box-shadow: 3px 4px 30px 0 rgba(28, 72, 192, 0.205);
+}
+.pricing-table-item:hover .p-heading h1{
+    background: #f0952a;
+    color: #fff;
+}
+
+.pricing-table-item:hover .p-heading{
+    background: #f0952a;
+    color: #fff;
+}
+.pricing-table-item:hover .p-button .default-btn{
+    background: #f0952a;
+    color: #fff;
+}
+
+
+/* <<<<<<<<<<*Team_Section_Css*>>>>>>>>>> */
+.team-section{
+    padding: 100px 0;
+}
+.team-title{}
+.team-title h1 {
+	font-size: 40px;
+	font-weight: 500;
+	padding-bottom: 50px;
+	margin-bottom: 20px;
+}
+
+.team-members{}
+.member {
+	width: 23.5%;
+	margin-right: 2%;
+	box-shadow: 3px 4px 30px 0 rgba(28, 72, 192, 0.185);
+	border: 7px double #e79230;
+	box-sizing: border-box;
+}
+.member:last-child{
+    margin-right: 0;
+}
+.member img{}
+.member-bio {
+	padding: 25px;
+}
+.member-bio h4 {
+	font-weight: 400;
+	font-size: 23px;
+	margin-bottom: 10px;
+}
+.member-bio p {
+	color: grey;
+	font-size: 19px;
+	padding: 5px 0;
+}
+
+
+/* <<<<<<<<<<*News_latter_CSS*>>>>>>>>>> */
+.news-section{
+    padding: 100px 0;
+    background: #f5f5f5;
+}
+.news-title p {
+	margin-bottom: 50px;
+    color: rgb(36, 36, 36);
+}
+.news-title h1 {
+	font-size: 44px;
+	font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.newslatter-form{}
+.default-input {
+	width: 500px;
+	padding: 18px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: 1px solid #e79230;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px 30px 0 rgba(28, 72, 192, 0.205);
+    box-sizing: border-box;
+
+    transition: .3s;
+}
+.default-input:focus{
+    box-shadow: 3px 4px 30px 0 rgba(28, 72, 192, 0.411);
+    border: 1px solid #315c93;
+    outline: none;
+}
+.submit-btn {
+	width: 255px;
+	padding: 17px;
+	font-size: 24px;
+	background: #aa972c;
+	color: #fff;
+	border-radius: 10px;
+    box-shadow: 3px 4px 30px 0 rgba(28, 72, 192, 0.205);
+    border: 1px solid transparent;
+    margin-top: 5px;
+    
+    transition: .3s;
+}
+.submit-btn:hover{
+    box-shadow: 3px 4px 30px 0 rgba(38, 73, 170, 0.534);
+    background-color: #fff;
+    color: #e79230;
+    border: 1px solid #e79230;
+}
+
+
+/* <<<<<<<<<<<*Choose_Section_Css*>>>>>>>>>> */
+.choose-section{}
+.choose-title h1 {
+	font-size: 57px;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+.choose-reason{}
+.reason-img{
+    width: 40%;
+}
+.reason-img img{}
+.reason-content{
+    width: 58%;
+}
+.reason-content h4 {
+	font-size: 21px;
+	padding: 20px 0;
+    color: rgb(70, 70, 70);
+}
+.reason-content p {
+	font-size: 18px;
+	line-height: 32px;
+    color: rgb(95, 95, 95);
+}
+.space{
+    color: #fff;
+}
+
+
+/* <<<<<<<<<<*Feedback_Section_CSS*>>>>>>>>>> */
+.feedback-section{
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+.feedback-title{}
+.feedback-title p{}
+.feedback-title h2 {
+	font-size: 43px;
+	font-weight: 500;
+	margin: 50px 0;
+}
+
+.feedback-items{}
+.i-item{
+    width: 32%;
+    margin-right: 2%;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+}
+.i-item:last-child{
+    margin-right: 0;
+}
+.t-content{
+    background-color: #fff;
+    box-shadow: 3px 4px 30px 0 rgba(38, 73, 170, 0.342);
+    padding: 40px 50px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+
+    position: relative;
+}
+.t-content::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -19px;
+    margin: auto;
+
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 23px;
+    border-right-width: 25px;
+    border-top: 28px solid rgb(255, 255, 255);
+}
+.t-content p {
+	color: grey;
+	font-size: 18px;
+	line-height: 36px;
+
+    position: relative;
+}
+.t-content p::before {
+	content: "\f10d";
+	position: absolute;
+	font-family: FontAwesome;
+	opacity: .2;
+	font-size: 70px;
+	left: -20px;
+	top: -6px;
+}
+.t-user-img {
+	width: 220px;
+	margin: auto;
+}
+.t-user-img img{
+    width: 75px;
+    border: 8px solid #aa972c;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.t-user-bio{}
+.t-user-bio h4 {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 52px;
+    color: rgb(41, 41, 41);
+}
+.t-user-bio p{
+    color: grey;
+}
+
+
+/* <<<<<<<<<<*Contact_Section_Css*>>>>>>>>>> */
+.contact-section{
+    padding: 100px 0;
+    background-color: #fff;
+}
+.contact-title {
+	width: 750px;
+	margin: auto;
+}
+.contact-title h3 {
+	font-size: 26px;
+	font-weight: 400;
+    margin-bottom: 30px;
+}
+.contact-title p {
+	color: grey;
+	font-size: 20px;
+	line-height: 36px;
+    margin-bottom: 50px;
+}
+
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 48%;
+}
+.another-btn {
+	background-color: #aa972c;
+	padding: 21px 70px;
+	color: #fff;
+    border: 1px solid transparent;
+}
+.another-btn:hover{
+    background-color: #fff;
+    color: #e79230;
+    border: 1px solid #b68855;
+}
+
+
+/* <<<<<<<<<<*Footer_Section_Css*>>>>>>>>> */
+.footer p{
+    font-size: 20px;
+    color: rgb(48, 48, 48);
+    padding-bottom: 20px;
+}
